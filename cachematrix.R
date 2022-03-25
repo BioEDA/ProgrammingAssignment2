@@ -25,7 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## function 2 (cacheSolve) creates the inverse of m created with function 1. 
+## In doing so, it checks if the inverse has already been calculated. If yes, 
+## it retreives the inverse from the cache; if not, it calculates it
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
